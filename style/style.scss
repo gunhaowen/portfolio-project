@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+}
+
+.orange{
+    position: absolute;
+    top: -15vh;
+    right: -5vw;
+    z-index: -1;
+    width: 55vw;
+    height: 130vh;
+}
+
+header{
+
+    nav{
+        width: 100%;
+        
+        ul{
+            width: 70%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            padding: 1.5rem;
+
+            li{
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+
+    section.left{
+        flex: 3 1 500px;
+        padding: 2rem;
+
+        h1{
+            font-size: 4rem;
+            color: #E08958;
+        }
+
+        p{
+            font-size: 1.5rem;
+            padding: 1rem 0rem;
+        }
+    }
+
+    section.right{
+        flex: 1 1 600px;
+        position: relative;
+
+        img.mypic{
+            border-radius: 50%;
+            width: 20vw;
+            height: 20vw;
+            position: absolute;
+            top: 22vh;
+            right: 20vw;
+        }
+
+        div.empty {
+            height: 39rem;
+        }
+        
+        h3.rectangle {
+            text-align: left;
+            font-size: 2rem;
+            background-color: #1debeb;
+            width: 60%;
+            padding: 1.5rem 3rem 1.5rem 5.5rem;
+            box-shadow: 30px 30px #0b9890;
+
+        }
+        
+    }
+
+    section.table{
+        flex: 3 1 500px;
+        padding: 2rem;
+
+        table{
+            border-collapse: collapse;
+            margin: 0rem 4rem;
+
+            tr{
+                border-bottom: 2px solid gray;
+                transition: all 0.2s ease;
+
+                td{
+                    padding: 1rem;
+                    font-size: 1.25rem;
+
+                    img{
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    ul, ol{
+                        margin-left: 1.25rem;
+                    }
+                }
+                &:hover{
+                    background-color: rgb(248, 207, 132);
+                }
+            }
+        }
+    }
+
+    section.pic{
+        flex: 1 1 600px;
+        position: relative;
+
+        img{
+            width: 30vw;
+        }
+
+        div.orangeRect{
+            width: 30vw;
+            height: 90vh;
+            background-color: #E08958;
+            position: absolute;
+            top: 30px;
+            left: 80px;
+            z-index: -1;
+        }
+    }
+
+    section.form{
+        flex: 1 1 600px;
+
+        form{
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0rem 1.5rem 1.5rem 1.5rem;
+
+            div{
+                margin: 0.5rem;
+
+                label{
+                    font-size: 1.5rem;
+                    margin-right: 1.25rem;
+                }
+
+                input{
+                    background-color: #e6a078;
+                    color: white;
+                    font-size: 1.25rem;
+                    padding: 0.5rem 0.75rem;
+                    border: none;
+                    width: 90%;
+                }
+
+                textarea{
+                    background-color: #e6a078;
+                    color: white;
+                    font-size: 1.25rem;
+                    padding: 0.5rem 0.75rem;
+                    border: none;
+                    width: 90%;
+                    vertical-align: top;
+                }
+            }
+
+            button{
+                align-self: center;
+                background-color: #E08958;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 0.75rem 1.5rem;
+                font-size: 2rem;
+                border-radius: 10px;
+
+            }
+
+        }
+    }
+
+    div.line{
+        background-color: gray;
+        width: 3px;
+    }
+
+    section.contact{
+        flex: 1 1 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+
+        div.content{
+
+            h2{
+                margin: 1rem 0rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+footer{
+    
+    div.empty1{
+        height: 1rem;
+    }
+
+    div.empty2{
+        height: 5.9rem;
+    }
+
+    a{
+        padding: 1rem;
+    }
+}
+
+.active{
+    color: #E08958;
+}
+
+@media screen  and(max-width: 1100px){
+    header{
+
+        nav{
+
+            ul{
+                flex-direction: column;
+                width: 100%;
+
+                li{
+                    padding: 1.5rem;
+                    border-bottom: 2px solid gray;
+                }
+            }
+        }
+    }
+
+    .orange{
+        opacity: 0.4;
+    }
+
+    main{
+
+        section.right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+
+            img.mypic{
+                position: static;
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+
+        section.pic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 60vw;
+            }
+
+            div.orangeRect{
+                display: none;
+            }
+        }
+
+        section.table{
+            flex-direction: column;
+            width: 100%;
+
+            table{
+                border-collapse: collapse;
+                margin: 0rem;
+    
+                tr{
+                    border-bottom: 2px solid gray;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+    }
+
+    div.line{
+        background-color: white;
+        width: 3px;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 1.5rem;
+
+        a {
+          padding: 2rem 0rem;
+        }
+    }
+}

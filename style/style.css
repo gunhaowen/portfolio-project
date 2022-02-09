@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+.orange {
+  position: absolute;
+  top: -15vh;
+  right: -5vw;
+  z-index: -1;
+  width: 55vw;
+  height: 130vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main section.left h1 {
+  font-size: 4rem;
+  color: #E08958;
+}
+
+main section.left p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.right img.mypic {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 22vh;
+  right: 20vw;
+}
+
+main section.right div.empty {
+  height: 39rem;
+}
+
+main section.right h3.rectangle {
+  text-align: left;
+  font-size: 2rem;
+  background-color: #1debeb;
+  width: 60%;
+  padding: 1.5rem 3rem 1.5rem 5.5rem;
+  -webkit-box-shadow: 30px 30px #0b9890;
+          box-shadow: 30px 30px #0b9890;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+  margin: 0rem 4rem;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+main section.table table tr td img {
+  width: 3rem;
+  height: 3rem;
+}
+
+main section.table table tr td ul, main section.table table tr td ol {
+  margin-left: 1.25rem;
+}
+
+main section.table table tr:hover {
+  background-color: #f8cf84;
+}
+
+main section.pic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.pic img {
+  width: 30vw;
+}
+
+main section.pic div.orangeRect {
+  width: 30vw;
+  height: 90vh;
+  background-color: #E08958;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.form form {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+main section.form form div {
+  margin: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+}
+
+main section.form form div input {
+  background-color: #e6a078;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  width: 90%;
+}
+
+main section.form form div textarea {
+  background-color: #e6a078;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  width: 90%;
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #E08958;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
+  font-size: 1.8rem;
+}
+
+footer div.empty1 {
+  height: 1rem;
+}
+
+footer div.empty2 {
+  height: 5.9rem;
+}
+
+footer a {
+  padding: 1rem;
+}
+
+.active {
+  color: #E08958;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header nav ul li {
+    padding: 1.5rem;
+    border-bottom: 2px solid gray;
+  }
+  .orange {
+    opacity: 0.4;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  main section.right img.mypic {
+    position: static;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.pic img {
+    width: 60vw;
+  }
+  main section.pic div.orangeRect {
+    display: none;
+  }
+  main section.table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main section.table table {
+    border-collapse: collapse;
+    margin: 0rem;
+  }
+  main section.table table tr {
+    border-bottom: 2px solid gray;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  div.line {
+    background-color: white;
+    width: 3px;
+  }
+  footer {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 1.5rem;
+  }
+  footer a {
+    padding: 2rem 0rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
